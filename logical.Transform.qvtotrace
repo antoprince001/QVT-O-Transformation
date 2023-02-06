@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="Model2Model" package="Transform" module="Transform"/>
+    <context>
+      <context name="self" type="Model">
+        <value>
+          <modelElement href="conceptual-to-logical.uml#_XJGQIKC9Ee2UFJZBnr3RHQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Model">
+        <value>
+          <modelElement href="logical.uml#_1vLi0KYGEe2wdbjrIqIpXw"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="Class2Class" package="Transform" module="Transform"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="conceptual-to-logical.uml#_mdb84KC9Ee2UFJZBnr3RHQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Class">
+        <value>
+          <modelElement href="logical.uml#_1vLi1qYGEe2wdbjrIqIpXw"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="Class2Class" package="Transform" module="Transform"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="conceptual-to-logical.uml#_kXoG8KC9Ee2UFJZBnr3RHQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Class">
+        <value>
+          <modelElement href="logical.uml#_1vLi0aYGEe2wdbjrIqIpXw"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="Class2Class" package="Transform" module="Transform"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="conceptual-to-logical.uml#_oQhrIKC9Ee2UFJZBnr3RHQ"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Class">
+        <value>
+          <modelElement href="logical.uml#_1vLi2qYGEe2wdbjrIqIpXw"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+</trace:Trace>

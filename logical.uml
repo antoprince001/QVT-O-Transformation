@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_1vLi0KYGEe2wdbjrIqIpXw" name="conceptual-to-logical">
+  <packagedElement xmi:type="uml:Class" xmi:id="_1vLi0aYGEe2wdbjrIqIpXw" name="STUDENT">
+    <ownedAttribute xmi:id="_1vLi0qYGEe2wdbjrIqIpXw" name="StudentName" isUnique="false">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1vLi06YGEe2wdbjrIqIpXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1vLi1KYGEe2wdbjrIqIpXw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_1vLi1aYGEe2wdbjrIqIpXw" value="Student"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1vLi1qYGEe2wdbjrIqIpXw" name="COURSE">
+    <ownedAttribute xmi:id="_1vLi16YGEe2wdbjrIqIpXw" name="CourseCode">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1vLi2KYGEe2wdbjrIqIpXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1vLi2aYGEe2wdbjrIqIpXw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1vLi2qYGEe2wdbjrIqIpXw" name="TEACHER">
+    <ownedAttribute xmi:id="_1vLi26YGEe2wdbjrIqIpXw" name="TeacherName" isUnique="false">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1vLi3KYGEe2wdbjrIqIpXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1vLi3aYGEe2wdbjrIqIpXw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KzCh8KVpEe2q-ZWXuqkMFQ" memberEnd="_KzDwEqVpEe2q-ZWXuqkMFQ _KzEXIaVpEe2q-ZWXuqkMFQ">
+    <eAnnotations xmi:id="_KzDwEKVpEe2q-ZWXuqkMFQ" source="org.eclipse.papyrus">
+      <details xmi:id="_KzDwEaVpEe2q-ZWXuqkMFQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_KzEXIaVpEe2q-ZWXuqkMFQ" association="_KzCh8KVpEe2q-ZWXuqkMFQ">
+      <type xmi:type="uml:Class" href="conceptual-to-logical.uml#_mdb84KC9Ee2UFJZBnr3RHQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VqWpwKVpEe2q-ZWXuqkMFQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_KzDwEqVpEe2q-ZWXuqkMFQ" association="_KzCh8KVpEe2q-ZWXuqkMFQ">
+      <type xmi:type="uml:Class" href="conceptual-to-logical.uml#_oQhrIKC9Ee2UFJZBnr3RHQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KzDwE6VpEe2q-ZWXuqkMFQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KzEXIKVpEe2q-ZWXuqkMFQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JIsgAKVpEe2q-ZWXuqkMFQ" memberEnd="_JIvjUKVpEe2q-ZWXuqkMFQ _JIxYgKVpEe2q-ZWXuqkMFQ">
+    <eAnnotations xmi:id="_JIuVMKVpEe2q-ZWXuqkMFQ" source="org.eclipse.papyrus">
+      <details xmi:id="_JIuVMaVpEe2q-ZWXuqkMFQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_JIvjUKVpEe2q-ZWXuqkMFQ" association="_JIsgAKVpEe2q-ZWXuqkMFQ">
+      <type xmi:type="uml:Class" href="conceptual-to-logical.uml#_mdb84KC9Ee2UFJZBnr3RHQ"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_JIxYgKVpEe2q-ZWXuqkMFQ" association="_JIsgAKVpEe2q-ZWXuqkMFQ">
+      <type xmi:type="uml:Class" href="conceptual-to-logical.uml#_kXoG8KC9Ee2UFJZBnr3RHQ"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,49 @@
+modeltype UML uses uml("http://www.eclipse.org/uml2/3.0.0/UML");
+
+transformation Transform(in srcModel : UML,out UML);
+
+main() {
+	srcModel.rootObjects()[UML::Model]->map Model2Model();
+}
+
+mapping UML::Model::Model2Model():UML::Model {
+
+	name := self.name;
+	packagedElement += self.packagedElement[UML::Class]->map Class2Class();
+	packagedElement += self.packagedElement[UML::Association];
+}
+
+mapping Class :: Class2Class() : Class{
+	name := self.name;
+	if(self.name = "STUDENT"){
+		var studentName = object Property {
+      		name := "StudentName";
+      		isDerived := false;
+      		isUnique := false;
+      		_default := "Student"; 
+      		lower := 1;
+      		upper := 1;
+   		};
+   		ownedAttribute += studentName;
+	}
+	else if(self.name = "TEACHER"){
+		var teacherName = object Property {
+      		name := "TeacherName";
+      		isDerived := false;
+      		isUnique := false; 
+      		lower := 1;
+      		upper := 1;
+   		};
+   		ownedAttribute += teacherName;
+	}
+	else if(self.name = "COURSE"){
+		var courseCode = object Property {
+      		name := "CourseCode";
+      		isDerived := false;
+      		isUnique := true; 
+      		lower := 1;
+      		upper := 1;
+   		};
+   		ownedAttribute += courseCode;
+	}
+}

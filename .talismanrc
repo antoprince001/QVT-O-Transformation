@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: conceptual-to-logical.uml
+  checksum: 6f8bae72688ff96d34f9dcc91406e809e75be6b4dfa03429186a6099fdbe79af
+- filename: logical.uml
+  checksum: 7921b2efa7e2b19702d9fd4befef38b3bf5ba2c9968c45bc5577784c972a6c69
+version: ""

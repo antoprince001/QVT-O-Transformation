@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_XJGQIKC9Ee2UFJZBnr3RHQ" name="conceptual-to-logical">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_XJQBIKC9Ee2UFJZBnr3RHQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kXoG8KC9Ee2UFJZBnr3RHQ" name="STUDENT">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SvV4oKYCEe2wdbjrIqIpXw" name="Property1">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kZ4nwKYCEe2wdbjrIqIpXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kZpXMKYCEe2wdbjrIqIpXw" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mdb84KC9Ee2UFJZBnr3RHQ" name="COURSE"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oQhrIKC9Ee2UFJZBnr3RHQ" name="TEACHER"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JIsgAKVpEe2q-ZWXuqkMFQ" memberEnd="_JIvjUKVpEe2q-ZWXuqkMFQ _JIxYgKVpEe2q-ZWXuqkMFQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JIuVMKVpEe2q-ZWXuqkMFQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JIuVMaVpEe2q-ZWXuqkMFQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JIvjUKVpEe2q-ZWXuqkMFQ" type="_mdb84KC9Ee2UFJZBnr3RHQ" association="_JIsgAKVpEe2q-ZWXuqkMFQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JIxYgKVpEe2q-ZWXuqkMFQ" type="_kXoG8KC9Ee2UFJZBnr3RHQ" association="_JIsgAKVpEe2q-ZWXuqkMFQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KzCh8KVpEe2q-ZWXuqkMFQ" memberEnd="_KzDwEqVpEe2q-ZWXuqkMFQ _KzEXIaVpEe2q-ZWXuqkMFQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KzDwEKVpEe2q-ZWXuqkMFQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KzDwEaVpEe2q-ZWXuqkMFQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KzEXIaVpEe2q-ZWXuqkMFQ" type="_mdb84KC9Ee2UFJZBnr3RHQ" association="_KzCh8KVpEe2q-ZWXuqkMFQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VqWpwKVpEe2q-ZWXuqkMFQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KzDwEqVpEe2q-ZWXuqkMFQ" type="_oQhrIKC9Ee2UFJZBnr3RHQ" association="_KzCh8KVpEe2q-ZWXuqkMFQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KzDwE6VpEe2q-ZWXuqkMFQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KzEXIKVpEe2q-ZWXuqkMFQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
